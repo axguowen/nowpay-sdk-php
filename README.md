@@ -23,7 +23,7 @@ $config = [
 // 创建微信H5支付服务
 $wepayH5 = \axguowen\Nowpay::service('wepayH5', $config);
 // 订单创建
-$orderCreateResult = $wepayH5->counterOrderSpecialCreate('order10102032033', 1599, '订单标题', [
+$orderCreateResult = $wepayH5->orderCreate('order10102032033', 1599, '订单标题', [
     'notifyUrl' => 'http://xxx.xxx.com/notify',
     'frontNotifyUrl' => 'http://xxx.xxx.com/notify',
 ]);
